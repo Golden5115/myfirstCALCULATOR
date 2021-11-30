@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    background-color: green;
+}
+
+.container{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: green;
+    background: linear-gradient(to right, RED, BLUE);
+}
+.calc{
+    border-radius: 30px;
+    box-shadow: 6px 6px 13px rgb(45, 221, 45),
+                6px 6px 13px rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+    padding: 40px;
+}
+
+input{
+    grid-column: span 4;
+    height: 70px;
+    box-shadow: inset -6px -6px 13px rgb(87, 243, 87),
+                inset 6px 6px 13px rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    text-align: end;
+    font-size: 40px;
+    color: black;
+    margin: 40px 0px 30px 0px;
+    padding: 20px;
+    width: 280;
+}
+
+button{
+    box-shadow: 6px 6px 13px rgb(45, 221, 45),
+                6px 6px 13px rgb(0, 0, 0);
+    border-radius: 42px;
+    width: normal;
+    height: 40px;
+    margin-top: 2px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(17, 128, 17);
+    cursor: pointer;
+}
+.equal{
+    grid-column: span 2;
+    background-color: blueviolet;
+
+}
+
+.clear{
+    grid-column: span 2;
+}
+
+.del{
+    background-color: crimson;
+}
+
+header {
+    width: 259px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color:red;
+    display: flex;
+    box-shadow: 6px 6px 13px rgb(45, 221, 45),
+                6px 6px 13px rgb(0, 0, 0); 
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: bolder;
+    border-radius: 40px;
+}
